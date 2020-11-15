@@ -1,0 +1,25 @@
+{
+  "kogniticApplicationApp": {
+    "biomarkerStrategy": {
+      "home": {
+        "title": "Biomarker Strategies",
+        "createLabel": "Create a new Biomarker Strategy",
+        "createOrEditLabel": "Create or edit a Biomarker Strategy",
+        "search": "Search for Biomarker Strategy",
+        "notFound": "No Biomarker Strategies found"
+      },
+      "created": "A new Biomarker Strategy is created with identifier {{ param }}",
+      "updated": "A Biomarker Strategy is updated with identifier {{ param }}",
+      "deleted": "A Biomarker Strategy is deleted with identifier {{ param }}",
+      "delete": {
+        "question": "Are you sure you want to delete Biomarker Strategy {{ id }}?"
+      },
+      "detail": {
+        "title": "Biomarker Strategy"
+      },
+      "biomarkerStrategy": "Biomarker Strategy",
+      "biomarkerMutation": "Biomarker Mutation",
+      "biomarker": "Biomarker"
+    }
+  }
+}

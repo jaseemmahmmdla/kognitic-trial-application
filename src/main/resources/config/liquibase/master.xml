@@ -14,7 +14,24 @@
     <property name="uuidType" value="varchar(36)" dbms="h2, mysql, mariadb"/>
 
     <include file="config/liquibase/changelog/00000000000000_initial_schema.xml" relativeToChangelogFile="false"/>
+    <include file="config/liquibase/changelog/20201115223422_added_entity_Trial.xml" relativeToChangelogFile="false"/>
+    <include file="config/liquibase/changelog/20201115223522_added_entity_Indication.xml" relativeToChangelogFile="false"/>
+    <include file="config/liquibase/changelog/20201115223622_added_entity_IndicationType.xml" relativeToChangelogFile="false"/>
+    <include file="config/liquibase/changelog/20201115223722_added_entity_IndicationBucket.xml" relativeToChangelogFile="false"/>
+    <include file="config/liquibase/changelog/20201115223822_added_entity_Biomarker.xml" relativeToChangelogFile="false"/>
+    <include file="config/liquibase/changelog/20201115223922_added_entity_BiomarkerStrategy.xml" relativeToChangelogFile="false"/>
+    <include file="config/liquibase/changelog/20201115224022_added_entity_BiomarkerMutation.xml" relativeToChangelogFile="false"/>
+    <include file="config/liquibase/changelog/20201115224122_added_entity_LineOfTherapy.xml" relativeToChangelogFile="false"/>
+    <include file="config/liquibase/changelog/20201115224222_added_entity_Stage.xml" relativeToChangelogFile="false"/>
     <!-- jhipster-needle-liquibase-add-changelog - JHipster will add liquibase changelogs here -->
+    <include file="config/liquibase/changelog/20201115223522_added_entity_constraints_Indication.xml" relativeToChangelogFile="false"/>
+    <include file="config/liquibase/changelog/20201115223622_added_entity_constraints_IndicationType.xml" relativeToChangelogFile="false"/>
+    <include file="config/liquibase/changelog/20201115223722_added_entity_constraints_IndicationBucket.xml" relativeToChangelogFile="false"/>
+    <include file="config/liquibase/changelog/20201115223822_added_entity_constraints_Biomarker.xml" relativeToChangelogFile="false"/>
+    <include file="config/liquibase/changelog/20201115223922_added_entity_constraints_BiomarkerStrategy.xml" relativeToChangelogFile="false"/>
+    <include file="config/liquibase/changelog/20201115224022_added_entity_constraints_BiomarkerMutation.xml" relativeToChangelogFile="false"/>
+    <include file="config/liquibase/changelog/20201115224122_added_entity_constraints_LineOfTherapy.xml" relativeToChangelogFile="false"/>
+    <include file="config/liquibase/changelog/20201115224222_added_entity_constraints_Stage.xml" relativeToChangelogFile="false"/>
     <!-- jhipster-needle-liquibase-add-constraints-changelog - JHipster will add liquibase constraints changelogs here -->
     <!-- jhipster-needle-liquibase-add-incremental-changelog - JHipster will add incremental liquibase changelogs here -->
 </databaseChangeLog>

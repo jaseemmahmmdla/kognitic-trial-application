@@ -1,0 +1,36 @@
+<div class="row justify-content-center">
+    <div class="col-8">
+        <div *ngIf="biomarker">
+            <h2><span jhiTranslate="kogniticApplicationApp.biomarker.detail.title">Biomarker</span> {{ biomarker.id }}</h2>
+
+            <hr>
+
+            <jhi-alert-error></jhi-alert-error>
+
+            <dl class="row-md jh-entity-details">
+                <dt><span jhiTranslate="kogniticApplicationApp.biomarker.biomarker">Biomarker</span></dt>
+                <dd>
+                    <span>{{ biomarker.biomarker }}</span>
+                </dd>
+                <dt><span jhiTranslate="kogniticApplicationApp.biomarker.trial">Trial</span></dt>
+                <dd>
+                    <div *ngIf="biomarker.trial">
+                        <a [routerLink]="['/trial', biomarker.trial?.id, 'view']">{{ biomarker.trial?.id }}</a>
+                    </div>
+                </dd>
+            </dl>
+
+            <button type="submit"
+                    (click)="previousState()"
+                    class="btn btn-info">
+                <fa-icon icon="arrow-left"></fa-icon>&nbsp;<span jhiTranslate="entity.action.back">Back</span>
+            </button>
+
+            <button type="button"
+                    [routerLink]="['/biomarker', biomarker.id, 'edit']"
+                    class="btn btn-primary">
+                <fa-icon icon="pencil-alt"></fa-icon>&nbsp;<span jhiTranslate="entity.action.edit">Edit</span>
+            </button>
+        </div>
+    </div>
+</div>
