@@ -1,0 +1,36 @@
+<div class="row justify-content-center">
+    <div class="col-8">
+        <div *ngIf="indicationBucket">
+            <h2><span jhiTranslate="kogniticApplicationApp.indicationBucket.detail.title">Indication Bucket</span> {{ indicationBucket.id }}</h2>
+
+            <hr>
+
+            <jhi-alert-error></jhi-alert-error>
+
+            <dl class="row-md jh-entity-details">
+                <dt><span jhiTranslate="kogniticApplicationApp.indicationBucket.indicationBucket">Indication Bucket</span></dt>
+                <dd>
+                    <span>{{ indicationBucket.indicationBucket }}</span>
+                </dd>
+                <dt><span jhiTranslate="kogniticApplicationApp.indicationBucket.indication">Indication</span></dt>
+                <dd>
+                    <div *ngIf="indicationBucket.indication">
+                        <a [routerLink]="['/indication', indicationBucket.indication?.id, 'view']">{{ indicationBucket.indication?.id }}</a>
+                    </div>
+                </dd>
+            </dl>
+
+            <button type="submit"
+                    (click)="previousState()"
+                    class="btn btn-info">
+                <fa-icon icon="arrow-left"></fa-icon>&nbsp;<span jhiTranslate="entity.action.back">Back</span>
+            </button>
+
+            <button type="button"
+                    [routerLink]="['/indication-bucket', indicationBucket.id, 'edit']"
+                    class="btn btn-primary">
+                <fa-icon icon="pencil-alt"></fa-icon>&nbsp;<span jhiTranslate="entity.action.edit">Edit</span>
+            </button>
+        </div>
+    </div>
+</div>

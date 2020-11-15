@@ -1,0 +1,24 @@
+{
+  "kogniticApplicationApp": {
+    "biomarkerMutation": {
+      "home": {
+        "title": "Biomarker Mutations",
+        "createLabel": "Create a new Biomarker Mutation",
+        "createOrEditLabel": "Create or edit a Biomarker Mutation",
+        "search": "Search for Biomarker Mutation",
+        "notFound": "No Biomarker Mutations found"
+      },
+      "created": "A new Biomarker Mutation is created with identifier {{ param }}",
+      "updated": "A Biomarker Mutation is updated with identifier {{ param }}",
+      "deleted": "A Biomarker Mutation is deleted with identifier {{ param }}",
+      "delete": {
+        "question": "Are you sure you want to delete Biomarker Mutation {{ id }}?"
+      },
+      "detail": {
+        "title": "Biomarker Mutation"
+      },
+      "biomarkerMutation": "Biomarker Mutation",
+      "biomarkerStrategy": "Biomarker Strategy"
+    }
+  }
+}

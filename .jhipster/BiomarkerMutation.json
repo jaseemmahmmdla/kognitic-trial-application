@@ -1,0 +1,29 @@
+{
+  "name": "BiomarkerMutation",
+  "fields": [
+    {
+      "fieldName": "biomarkerMutation",
+      "fieldType": "String"
+    }
+  ],
+  "relationships": [
+    {
+      "relationshipType": "many-to-one",
+      "otherEntityName": "biomarkerStrategy",
+      "otherEntityRelationshipName": "biomarkerMutation",
+      "relationshipName": "biomarkerStrategy",
+      "otherEntityField": "id"
+    }
+  ],
+  "changelogDate": "20201115224022",
+  "entityTableName": "biomarker_mutation",
+  "dto": "no",
+  "pagination": "no",
+  "service": "serviceImpl",
+  "jpaMetamodelFiltering": false,
+  "fluentMethods": true,
+  "readOnly": false,
+  "embedded": false,
+  "clientRootFolder": "",
+  "applications": "*"
+}
