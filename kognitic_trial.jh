@@ -1,0 +1,45 @@
+entity Trial {
+	trialId String,
+	trialName String,
+}
+entity Indication {
+	indication String,
+}
+entity IndicationType {
+	indicationType String,
+}
+entity IndicationBucket {
+	indicationBucket String,
+}
+entity Biomarker {
+	biomarker String,
+}
+entity BiomarkerStrategy {
+	biomarkerStrategy String,
+}
+entity BiomarkerMutation {
+	biomarkerMutation String,
+}
+entity LineOfTherapy {
+	lot String,
+}
+entity Stage {
+	stage String,
+}
+entity LineOfTherapy {
+	lot String,
+}
+relationship OneToMany {
+	Trial to Indication{trial},
+    Indication to Stage{indication},
+    Indication to IndicationType{indication},
+    Indication to IndicationBucket{indication},
+    Indication to LineOfTherapy{indication},
+    Trial to Biomarker{trial},
+    Biomarker to BiomarkerStrategy{biomarker},
+    BiomarkerStrategy to BiomarkerMutation{biomarkerStrategy}
+}
+
+paginate Trial with pagination
+service all with serviceImpl
+
