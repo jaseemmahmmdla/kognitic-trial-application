@@ -7,6 +7,15 @@
       "jhipster-needle-menu-add-element": "JHipster will add additional menu entries here (do not translate!)",
       "entities": {
         "main": "Entities",
+        "trial": "Trial",
+        "indication": "Indication",
+        "indicationType": "Indication Type",
+        "indicationBucket": "Indication Bucket",
+        "biomarker": "Biomarker",
+        "biomarkerStrategy": "Biomarker Strategy",
+        "biomarkerMutation": "Biomarker Mutation",
+        "lineOfTherapy": "Line Of Therapy",
+        "stage": "Stage",
         "jhipster-needle-menu-add-entry": "JHipster will add additional entities here (do not translate!)"
       },
       "account": {

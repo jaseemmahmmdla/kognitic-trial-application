@@ -1,0 +1,26 @@
+{
+  "kogniticApplicationApp": {
+    "trial": {
+      "home": {
+        "title": "Trials",
+        "createLabel": "Create a new Trial",
+        "createOrEditLabel": "Create or edit a Trial",
+        "search": "Search for Trial",
+        "notFound": "No Trials found"
+      },
+      "created": "A new Trial is created with identifier {{ param }}",
+      "updated": "A Trial is updated with identifier {{ param }}",
+      "deleted": "A Trial is deleted with identifier {{ param }}",
+      "delete": {
+        "question": "Are you sure you want to delete Trial {{ id }}?"
+      },
+      "detail": {
+        "title": "Trial"
+      },
+      "trialId": "Trial Id",
+      "trialName": "Trial Name",
+      "indication": "Indication",
+      "biomarker": "Biomarker"
+    }
+  }
+}

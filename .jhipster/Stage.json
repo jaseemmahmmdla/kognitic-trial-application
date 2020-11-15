@@ -1,0 +1,29 @@
+{
+  "name": "Stage",
+  "fields": [
+    {
+      "fieldName": "stage",
+      "fieldType": "String"
+    }
+  ],
+  "relationships": [
+    {
+      "relationshipType": "many-to-one",
+      "otherEntityName": "indication",
+      "otherEntityRelationshipName": "stage",
+      "relationshipName": "indication",
+      "otherEntityField": "id"
+    }
+  ],
+  "changelogDate": "20201115223418",
+  "entityTableName": "stage",
+  "dto": "no",
+  "pagination": "no",
+  "service": "serviceImpl",
+  "jpaMetamodelFiltering": false,
+  "fluentMethods": true,
+  "readOnly": false,
+  "embedded": false,
+  "clientRootFolder": "",
+  "applications": "*"
+}

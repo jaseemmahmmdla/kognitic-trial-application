@@ -1,0 +1,38 @@
+{
+  "name": "Trial",
+  "fields": [
+    {
+      "fieldName": "trialId",
+      "fieldType": "String"
+    },
+    {
+      "fieldName": "trialName",
+      "fieldType": "String"
+    }
+  ],
+  "relationships": [
+    {
+      "relationshipType": "one-to-many",
+      "otherEntityName": "indication",
+      "otherEntityRelationshipName": "trial",
+      "relationshipName": "indication"
+    },
+    {
+      "relationshipType": "one-to-many",
+      "otherEntityName": "biomarker",
+      "otherEntityRelationshipName": "trial",
+      "relationshipName": "biomarker"
+    }
+  ],
+  "changelogDate": "20201115222618",
+  "entityTableName": "trial",
+  "dto": "no",
+  "pagination": "pagination",
+  "service": "serviceImpl",
+  "jpaMetamodelFiltering": false,
+  "fluentMethods": true,
+  "readOnly": false,
+  "embedded": false,
+  "clientRootFolder": "",
+  "applications": "*"
+}

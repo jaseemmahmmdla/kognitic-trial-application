@@ -1,0 +1,29 @@
+{
+  "name": "IndicationBucket",
+  "fields": [
+    {
+      "fieldName": "indicationBucket",
+      "fieldType": "String"
+    }
+  ],
+  "relationships": [
+    {
+      "relationshipType": "many-to-one",
+      "otherEntityName": "indication",
+      "otherEntityRelationshipName": "indicationBucket",
+      "relationshipName": "indication",
+      "otherEntityField": "id"
+    }
+  ],
+  "changelogDate": "20201115222918",
+  "entityTableName": "indication_bucket",
+  "dto": "no",
+  "pagination": "no",
+  "service": "serviceImpl",
+  "jpaMetamodelFiltering": false,
+  "fluentMethods": true,
+  "readOnly": false,
+  "embedded": false,
+  "clientRootFolder": "",
+  "applications": "*"
+}

@@ -47,6 +47,23 @@ public class CacheConfiguration {
             createCache(cm, com.kognitic.trial.domain.User.class.getName());
             createCache(cm, com.kognitic.trial.domain.Authority.class.getName());
             createCache(cm, com.kognitic.trial.domain.User.class.getName() + ".authorities");
+            createCache(cm, com.kognitic.trial.domain.Trial.class.getName());
+            createCache(cm, com.kognitic.trial.domain.Trial.class.getName() + ".indications");
+            createCache(cm, com.kognitic.trial.domain.Trial.class.getName() + ".biomarkers");
+            createCache(cm, com.kognitic.trial.domain.Indication.class.getName());
+            createCache(cm, com.kognitic.trial.domain.Indication.class.getName() + ".stages");
+            createCache(cm, com.kognitic.trial.domain.Indication.class.getName() + ".indicationTypes");
+            createCache(cm, com.kognitic.trial.domain.Indication.class.getName() + ".indicationBuckets");
+            createCache(cm, com.kognitic.trial.domain.Indication.class.getName() + ".lineOfTherapies");
+            createCache(cm, com.kognitic.trial.domain.IndicationType.class.getName());
+            createCache(cm, com.kognitic.trial.domain.IndicationBucket.class.getName());
+            createCache(cm, com.kognitic.trial.domain.Biomarker.class.getName());
+            createCache(cm, com.kognitic.trial.domain.Biomarker.class.getName() + ".biomarkerStrategies");
+            createCache(cm, com.kognitic.trial.domain.BiomarkerStrategy.class.getName());
+            createCache(cm, com.kognitic.trial.domain.BiomarkerStrategy.class.getName() + ".biomarkerMutations");
+            createCache(cm, com.kognitic.trial.domain.BiomarkerMutation.class.getName());
+            createCache(cm, com.kognitic.trial.domain.LineOfTherapy.class.getName());
+            createCache(cm, com.kognitic.trial.domain.Stage.class.getName());
             // jhipster-needle-ehcache-add-entry
         };
     }
