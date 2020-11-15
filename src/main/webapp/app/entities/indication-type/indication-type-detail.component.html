@@ -1,0 +1,36 @@
+<div class="row justify-content-center">
+    <div class="col-8">
+        <div *ngIf="indicationType">
+            <h2><span jhiTranslate="kogniticApplicationApp.indicationType.detail.title">Indication Type</span> {{ indicationType.id }}</h2>
+
+            <hr>
+
+            <jhi-alert-error></jhi-alert-error>
+
+            <dl class="row-md jh-entity-details">
+                <dt><span jhiTranslate="kogniticApplicationApp.indicationType.indicationType">Indication Type</span></dt>
+                <dd>
+                    <span>{{ indicationType.indicationType }}</span>
+                </dd>
+                <dt><span jhiTranslate="kogniticApplicationApp.indicationType.indication">Indication</span></dt>
+                <dd>
+                    <div *ngIf="indicationType.indication">
+                        <a [routerLink]="['/indication', indicationType.indication?.id, 'view']">{{ indicationType.indication?.id }}</a>
+                    </div>
+                </dd>
+            </dl>
+
+            <button type="submit"
+                    (click)="previousState()"
+                    class="btn btn-info">
+                <fa-icon icon="arrow-left"></fa-icon>&nbsp;<span jhiTranslate="entity.action.back">Back</span>
+            </button>
+
+            <button type="button"
+                    [routerLink]="['/indication-type', indicationType.id, 'edit']"
+                    class="btn btn-primary">
+                <fa-icon icon="pencil-alt"></fa-icon>&nbsp;<span jhiTranslate="entity.action.edit">Edit</span>
+            </button>
+        </div>
+    </div>
+</div>

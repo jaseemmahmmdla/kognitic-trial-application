@@ -1,0 +1,35 @@
+{
+  "name": "Biomarker",
+  "fields": [
+    {
+      "fieldName": "biomarker",
+      "fieldType": "String"
+    }
+  ],
+  "relationships": [
+    {
+      "relationshipType": "one-to-many",
+      "otherEntityName": "biomarkerStrategy",
+      "otherEntityRelationshipName": "biomarker",
+      "relationshipName": "biomarkerStrategy"
+    },
+    {
+      "relationshipType": "many-to-one",
+      "otherEntityName": "trial",
+      "otherEntityRelationshipName": "biomarker",
+      "relationshipName": "trial",
+      "otherEntityField": "id"
+    }
+  ],
+  "changelogDate": "20201115223018",
+  "entityTableName": "biomarker",
+  "dto": "no",
+  "pagination": "no",
+  "service": "serviceImpl",
+  "jpaMetamodelFiltering": false,
+  "fluentMethods": true,
+  "readOnly": false,
+  "embedded": false,
+  "clientRootFolder": "",
+  "applications": "*"
+}

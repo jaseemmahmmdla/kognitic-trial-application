@@ -1,0 +1,53 @@
+{
+  "name": "Indication",
+  "fields": [
+    {
+      "fieldName": "indication",
+      "fieldType": "String"
+    }
+  ],
+  "relationships": [
+    {
+      "relationshipType": "one-to-many",
+      "otherEntityName": "stage",
+      "otherEntityRelationshipName": "indication",
+      "relationshipName": "stage"
+    },
+    {
+      "relationshipType": "one-to-many",
+      "otherEntityName": "indicationType",
+      "otherEntityRelationshipName": "indication",
+      "relationshipName": "indicationType"
+    },
+    {
+      "relationshipType": "one-to-many",
+      "otherEntityName": "indicationBucket",
+      "otherEntityRelationshipName": "indication",
+      "relationshipName": "indicationBucket"
+    },
+    {
+      "relationshipType": "one-to-many",
+      "otherEntityName": "lineOfTherapy",
+      "otherEntityRelationshipName": "indication",
+      "relationshipName": "lineOfTherapy"
+    },
+    {
+      "relationshipType": "many-to-one",
+      "otherEntityName": "trial",
+      "otherEntityRelationshipName": "indication",
+      "relationshipName": "trial",
+      "otherEntityField": "id"
+    }
+  ],
+  "changelogDate": "20201115222718",
+  "entityTableName": "indication",
+  "dto": "no",
+  "pagination": "no",
+  "service": "serviceImpl",
+  "jpaMetamodelFiltering": false,
+  "fluentMethods": true,
+  "readOnly": false,
+  "embedded": false,
+  "clientRootFolder": "",
+  "applications": "*"
+}

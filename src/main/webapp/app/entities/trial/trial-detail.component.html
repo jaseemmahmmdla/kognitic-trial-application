@@ -1,0 +1,34 @@
+<div class="row justify-content-center">
+    <div class="col-8">
+        <div *ngIf="trial">
+            <h2><span jhiTranslate="kogniticApplicationApp.trial.detail.title">Trial</span> {{ trial.id }}</h2>
+
+            <hr>
+
+            <jhi-alert-error></jhi-alert-error>
+
+            <dl class="row-md jh-entity-details">
+                <dt><span jhiTranslate="kogniticApplicationApp.trial.trialId">Trial Id</span></dt>
+                <dd>
+                    <span>{{ trial.trialId }}</span>
+                </dd>
+                <dt><span jhiTranslate="kogniticApplicationApp.trial.trialName">Trial Name</span></dt>
+                <dd>
+                    <span>{{ trial.trialName }}</span>
+                </dd>
+            </dl>
+
+            <button type="submit"
+                    (click)="previousState()"
+                    class="btn btn-info">
+                <fa-icon icon="arrow-left"></fa-icon>&nbsp;<span jhiTranslate="entity.action.back">Back</span>
+            </button>
+
+            <button type="button"
+                    [routerLink]="['/trial', trial.id, 'edit']"
+                    class="btn btn-primary">
+                <fa-icon icon="pencil-alt"></fa-icon>&nbsp;<span jhiTranslate="entity.action.edit">Edit</span>
+            </button>
+        </div>
+    </div>
+</div>

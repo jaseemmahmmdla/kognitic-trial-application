@@ -1,0 +1,24 @@
+{
+  "kogniticApplicationApp": {
+    "lineOfTherapy": {
+      "home": {
+        "title": "Line Of Therapies",
+        "createLabel": "Create a new Line Of Therapy",
+        "createOrEditLabel": "Create or edit a Line Of Therapy",
+        "search": "Search for Line Of Therapy",
+        "notFound": "No Line Of Therapies found"
+      },
+      "created": "A new Line Of Therapy is created with identifier {{ param }}",
+      "updated": "A Line Of Therapy is updated with identifier {{ param }}",
+      "deleted": "A Line Of Therapy is deleted with identifier {{ param }}",
+      "delete": {
+        "question": "Are you sure you want to delete Line Of Therapy {{ id }}?"
+      },
+      "detail": {
+        "title": "Line Of Therapy"
+      },
+      "lot": "Lot",
+      "indication": "Indication"
+    }
+  }
+}

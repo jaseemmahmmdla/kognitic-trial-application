@@ -1,0 +1,28 @@
+{
+  "kogniticApplicationApp": {
+    "indication": {
+      "home": {
+        "title": "Indications",
+        "createLabel": "Create a new Indication",
+        "createOrEditLabel": "Create or edit a Indication",
+        "search": "Search for Indication",
+        "notFound": "No Indications found"
+      },
+      "created": "A new Indication is created with identifier {{ param }}",
+      "updated": "A Indication is updated with identifier {{ param }}",
+      "deleted": "A Indication is deleted with identifier {{ param }}",
+      "delete": {
+        "question": "Are you sure you want to delete Indication {{ id }}?"
+      },
+      "detail": {
+        "title": "Indication"
+      },
+      "indication": "Indication",
+      "stage": "Stage",
+      "indicationType": "Indication Type",
+      "indicationBucket": "Indication Bucket",
+      "lineOfTherapy": "Line Of Therapy",
+      "trial": "Trial"
+    }
+  }
+}
